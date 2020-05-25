@@ -1,0 +1,41 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+    color: cyan;
+    background: url(../img/main.jpeg)center/cover fixed no-repeat;
+}
+primary-color {
+    color: blue;
+}
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px)
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.main-btn {
+    color: #000;
+    font-size: 2rem;
+    border: 2px solid bisque;
+    transition: all 1.5s ease-in-out;
+
+}
+.main-btn:hover {
+    color: red;
+    border: 2pt solid whitesmoke;
+    background: #000;
+}
+.pizza-btn {
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 1.125s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
