@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
-    color: cyan;
+    color: blue;
     background: url(../img/main.jpeg)center/cover fixed no-repeat;
 }
 primary-color {
@@ -20,6 +20,54 @@ primary-color {
         opacity: 1;
     }
 }
+
+
+.item-container {
+    position: relative;
+    /* FOR THE LINK */
+    overflow: hidden;
+
+    transition: all 2s ease;
+}
+
+.item-img {
+    transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+    transform:  scale(1.2);
+    opacity: 0.5;
+}
+
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: bisque;
+    font-size: 2rem;
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    transition: 2s all ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover {
+    color: red;
+    border: 3px solid red;
+    background: black;
+    color: whitesmoke;
+}
+
+.item-container:hover {
+    outline: 10px solid bisque;
+    outline-offset: 0.8rem;
+}
 .main-btn {
     color: #000;
     font-size: 2rem;
@@ -29,7 +77,7 @@ primary-color {
 }
 .main-btn:hover {
     color: red;
-    border: 2pt solid whitesmoke;
+    border: 2pt solid grey;
     background: #000;
 }
 .pizza-btn {
